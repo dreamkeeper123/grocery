@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>守 · 神秘图书馆 · 梦</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* 顶部导航容器 */
+      .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 25px;
+        background-color: #0e111aa6;
+      }
+      .btn-group-left,.btn-group-right {
+        display: flex;
+        gap: 35px;
+      }
+      .nav-btn {
+        width: 72px;
+        height: 40px;
+        border-radius: 20%;
+        font-size: 16px;
+        padding: 8px 16px;
+        background-color: #0e111aa6;
+        color: #74f4fb;
+        border: 1px solid #44aaff80;
+        cursor: pointer;
+      }
+      /* 中间圆形图片 */
+      .circle-wrap {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 12px;
+        border-radius: 50%;
+        box-shadow: 0 0 12px #60d8ff80;
+      }
+      .circle-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        object-fit: cover;
+      }
+      body {
+        background-image: url("image/祈梦.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .zhongjian {
+        text-align: center;
+        margin-top: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background-color: #0e111aa6;
+        border: 1px solid #000;
+        border-radius: 30px;
+        color: #74f4fb;
+        font-size: 26px;
+        font-family: "楷体";
+        padding: 22px 45px;
+        font-size: 26px;
+        color: #74f4fb;
+        letter-spacing: 2px;
+        opacity: 0.92;
+        text-shadow:
+          0 0 6px #74f4fb80,
+          0 0 14px #38b8ff50;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-nav">
+      <!-- 左侧4个按钮 -->
+      <div class="btn-group-left">
+        <button class="nav-btn" onclick="location.href = 'index.html'">首页</button>
+        <button class="nav-btn" onclick="location.href = '2.html'">图片</button>
+        <button class="nav-btn" onclick="location.href = '3.html'">文章</button>
+        <button class="nav-btn" onclick="location.href = '4.html'">我的</button>
+      </div>
+
+      <!-- 中间圆形图片 -->
+      <div class="circle-wrap">
+        <img class="circle-img" src="image/2.jpg" alt="圆形头像" />
+      </div>
+
+      <!-- 右侧4个按钮 -->
+      <div class="btn-group-right">
+        <button class="nav-btn" onclick="location.href = '5.html'">设置</button>
+        <button class="nav-btn" onclick="location.href = '6.html'">帮助</button>
+        <button class="nav-btn" onclick="location.href = '7.html'">反馈</button>
+        <button class="nav-btn" onclick="location.href = '8.html'">关于</button>
+      </div>
+    </div>
+    <div class="zhongjian">
+      <p style="margin-left: -50px">于星夜里收集梦境与碎片</p>
+      <p>把它们拼凑成完整的梦</p>
+      <p style="margin-left: 199px">——守梦</p>
+    </div>
+  </body>
+</html>

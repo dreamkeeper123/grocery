@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>守 · 神秘图书馆 · 梦</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        overflow-y: overlay;
+      }
+      /* 顶部导航容器 */
+      .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 25px;
+        background-color: #0e111aa6;
+      }
+      .btn-group-left,.btn-group-right {
+        display: flex;
+        gap: 35px;
+      }
+      .nav-btn {
+        width: 72px;
+        height: 40px;
+        border-radius: 20%;
+        font-size: 16px;
+        padding: 8px 16px;
+        background-color: #0e111aa6;
+        color: #74f4fb;
+        border: 1px solid #44aaff80;
+        cursor: pointer;
+      }
+      /* 中间圆形图片 */
+      .circle-wrap {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 12px;
+        border-radius: 50%;
+        box-shadow: 0 0 12px #60d8ff80;
+      }
+      .circle-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        object-fit: cover;
+      }
+      body {
+        background-image: url("image/祈梦.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .zhongjian {
+        text-align: center;
+        margin-top: 20px;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background-color: #0e111aa6;
+        border: 1px solid #000;
+        border-radius: 30px;
+        color: #74f4fb;
+        font-size: 26px;
+        font-family: "楷体";
+        padding: 22px 45px;
+        font-size: 26px;
+        color: #74f4fb;
+        letter-spacing: 2px;
+        opacity: 0.92;
+        text-shadow:
+          0 0 6px #74f4fb80,
+          0 0 14px #38b8ff50;
+        line-height: 2.2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 顶部导航栏 -->
+    <div class="top-nav">
+      <!-- 左侧4个按钮 -->
+      <div class="btn-group-left">
+        <button class="nav-btn" onclick="location.href = 'index.html'">首页</button>
+        <button class="nav-btn" onclick="location.href = '2.html'">网站</button>
+        <button class="nav-btn" onclick="location.href = '3.html'">文章</button>
+        <button class="nav-btn" onclick="location.href = '4.html'">我的</button>
+      </div>
+
+      <!-- 中间圆形图片 -->
+      <div class="circle-wrap">
+        <img class="circle-img" src="image/2.jpg" alt="圆形头像" />
+      </div>
+
+      <!-- 右侧4个按钮 -->
+      <div class="btn-group-right">
+        <button class="nav-btn" onclick="location.href = '5.html'">设置</button>
+        <button class="nav-btn" onclick="location.href = '6.html'">帮助</button>
+        <button class="nav-btn" onclick="location.href = '7.html'">反馈</button>
+        <button class="nav-btn" onclick="location.href = '8.html'">关于</button>
+      </div>
+    </div>
+
+    <!-- 中间内容 -->
+    <div class="zhongjian">
+      <h1 style="color: chocolate;">游戏网站1</h1>
+      <p>mayflygame: <a href="https://www.mayflyspace.top/" target="_blank" rel="noopener noreferrer">https://www.mayflyspace.top/</a></p>
+      <p>星空站: <a href="https://www.kdocs.cn/l/cqO7lRHNtSFt" target="_blank" rel="noopener noreferrer">https://www.kdocs.cn/l/cqO7lRHNtSFt</a></p>
+      <p>梨子乐: <a href="https://lzlgo.com/" target="_blank" rel="noopener noreferrer">https://lzlgo.com/</a></p>
+      <p>kk: <a href="https://www.xkkgame.com/" target="_blank" rel="noopener noreferrer">https://www.xkkgame.com/</a></p>
+      <p>flysheep: <a href="https://www.flysheep6.com/" target="_blank" rel="noopener noreferrer">https://www.flysheep6.com/</a></p>
+      <p>playzip: <a href="https://playzip.com/" target="_blank" rel="noopener noreferrer">https://playzip.com/</a></p>
+
+      <h1 style="color: chocolate;">游戏网站2</h1>
+      <p>真红小站: <a href="https://www.shinnku.com/" target="_blank" rel="noopener noreferrer">https://www.shinnku.com/</a></p>
+      <p>绮梦: <a href="https://game.acgs.one/" target="_blank" rel="noopener noreferrer">https://game.acgs.one/</a></p>
+      <p>四叶草与雏菊: <a href="https://g.xn--8qvt52h.top/" target="_blank" rel="noopener noreferrer">https://g.xn--8qvt52h.top/</a></p>
+      <p>touchGal: <a href="https://www.touchgal.ink/" target="_blank" rel="noopener noreferrer">https://www.touchgal.ink/</a></p>
+      <p>青桔网: <a href="https://www.qingju.org/" target="_blank" rel="noopener noreferrer">https://www.qingju.org/</a></p>
+      <p>VikACG: <a href="https://www.vikacg.com/post" target="_blank" rel="noopener noreferrer">https://www.vikacg.com/post</a></p>
+
+      <h1 style="color: chocolate;">AI模型</h1>
+      <p>Civitaired: <a href="https://civitai.red/" target="_blank" rel="noopener noreferrer">https://civitai.red/</a></p>
+      <p>Cixitai: <a href="https://civitai.com/" target="_blank" rel="noopener noreferrer">https://civitai.com/</a></p>
+      <p>吐司: <a href="https://tusi.cn/" target="_blank" rel="noopener noreferrer">https://tusi.cn/</a></p>
+      <p>抱脸: <a href="https://huggingface.co/welcome" target="_blank" rel="noopener noreferrer">https://huggingface.co/welcome</a></p>
+    </div>
+
+  </body>
+</html>
