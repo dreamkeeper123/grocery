@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>守 · 神秘图书馆 · 梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 顶部导航容器 */
+        .top-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border-bottom: 1px solid #333;
+        }
+        .btn-group-left, .btn-group-right {
+            display: flex;
+            gap: 24px;
+        }
+        .nav-btn {
+            width: 72px;
+            height: 40px;
+            border: 2px solid #000;
+            background-color: #74f4fb;
+            border-radius: 20%;
+        }
+        /* 中间圆形图片 */
+        .circle-wrap {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 12px;
+        }
+        .circle-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            object-fit: cover;
+        }
+        body {
+        background-image: url("image/祈梦.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-color:#121520;
+        }
+    </style>
+</head>
+<body >
+    <div class="top-nav">
+        <!-- 左侧4个按钮 -->
+        <div class="btn-group-left">
+            <button class="nav-btn">首页</button>
+            <button class="nav-btn">图片</button>
+            <button class="nav-btn">消息</button>
+            <button class="nav-btn">我的</button>
+        </div>
+
+        <!-- 中间圆形图片 -->
+        <div class="circle-wrap">
+            <img class="circle-img" src="image/tj.jpg" alt="圆形头像">
+        </div>
+
+        <!-- 右侧4个按钮 -->
+        <div class="btn-group-right">
+            <button class="nav-btn">设置</button>
+            <button class="nav-btn">帮助</button>
+            <button class="nav-btn">反馈</button>
+            <button class="nav-btn">关于</button>
+        </div>
+    </div>
+    <div style="
+         text-align: center;
+         margin-top: 20px;
+         top: 50%; 
+         left: 50%; 
+         transform: translate(-50%, -50%); 
+         position: absolute;
+         background-color: #00000080;
+         border: 1px solid #000;
+         border-radius: 8px;
+         color: #74f4fb;
+         ">
+        <h1>守 · 神秘图书馆 · 梦</h1>
+        <p>这是守梦的网站主页，暂时没有内容。（少年开发中）</p>
+        <p>本来想做个gif当背景的......之后我再自己做吧</p>
+    </div>
+</body>
+</html>
